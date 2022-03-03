@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <body class="position-relative">
+        <main id="app" class="position-absolute m-auto">
+
+            <!-- **************************  container start here  ***************************-->
+            <div class="container">
+
+
+                <!-- ************************** heading start ***************************-->
+                <h2 style="text-align: center;">To-Do List</h2>
+
+
+                <!-- ************************** Adding task in Todo list ***************************-->
+                <p class="task__input">
+                    <i class="fa fa-list  fa-2x  "> &nbsp </i>
+                    <input id="new-task" type="text" required>
+                    <a>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        &nbsp;
+                        <span>
+                            Add
+                        </span>
+                    </a>
+                </p>
+                <!-- ************************** Add todo task in the list end  ***************************-->
+
+                <!-- ************************** A task details start  ***************************-->
+                <div class="info">
+                    <p id="print">Tasks</p>
+                    <div class="updates">
+                        <p>
+                            <strong>
+                                Total Task :<p id="all-task"></p>
+                            </strong>
+                        </p>
+                        <p style="color: rgb(73, 0, 0);">
+                            <strong>
+                                <strike>
+                                    Completed Task :<p id="complete-task"></p>
+
+                                </strike>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- ************************** A task details end  ***************************-->
+
+
+                <hr>
+
+                <!-- ************************** A todo list show here  start***************************-->
+                <div class="list">
+                    <div class="incomplete-task">
+                        <ul id="incomplete-tasks">
+                        </ul>
+                    </div>
+                    <div class="complete-task">
+                        <ul id="completed-tasks">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ************************** A todo list show here end***************************-->
+
+            </div>
+
+            <!-- ************************** A todo container end ***************************-->
+        </main>
+    </body>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
